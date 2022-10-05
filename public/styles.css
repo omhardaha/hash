@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+:root {
+	--progressBar: #54d1db;
+}
+
+body {
+	/* background: var(--bodyBg); */
+	background-color: rgb(243 242 239);
+	cursor: pointer;
+}
+
+.spanLikesList:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.f-font {
+	font-family: "Source Code Pro", monospace;
+}
+.inline1 {
+	display: inline;
+}
+.no-outline {
+	outline: none;
+}
+.mySpinner {
+	border: 5px solid #f3f3f3;
+	border-top: 5px solid #16d47b;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 0.8s linear infinite;
+	margin: auto;
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.refreshIcon {
+	text-align: center;
+}
+
+.ui.styled.accordion .content {
+	margin: 0;
+	padding: 0.5em 1em 0.75em !important;
+}
+
+.fontNew {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+		Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+	width: 7px;
+	background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #57564dc7;
+}
+body::-webkit-scrollbar-thumb:hover {
+	border-radius: 5px;
+	background-color: rgba(161, 110, 255, 0.879);
+}
+
+.bg-prime {
+	background-color: rgb(243 242 239) !important;
+}
+
+.foradiv {
+	border: antiquewhite !important;
+	box-shadow: none !important    ;
+	background-color: rgb(243 242 239) !important;
+}
+.wid-50vw {
+	width: 50vw;
+}
+.prompt {
+	width: 50vw !important;
+}
+.ui.form .field {
+	clear: both;
+	margin: 0 0 !important;
+}
+/* .content{
+    padding: 0!important;
+} */
+
+.segment {
+	padding: 0 !important;
+    margin-bottom: 48px!important;
+}
